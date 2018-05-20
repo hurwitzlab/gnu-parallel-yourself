@@ -1,0 +1,8 @@
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
+sleep 1 && echo $SLURM_NODEID
