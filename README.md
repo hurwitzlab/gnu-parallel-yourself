@@ -1,9 +1,6 @@
 # gnu-parallel-yourself
 Template script and instructions for using GNU Parallel in place of the TACC Launcher on Stampede2.
 
-# launch-yourself
-Template script and instructions for using the [TACC Launcher](https://www.tacc.utexas.edu/research-development/tacc-software/the-launcher) on Stampede2.
-
 ## Prerequisites
 GNU Parallel is not supported by TACC so it must be built. The 'Personal installation' method shown here will work on Stampede2: https://github.com/martinda/gnu-parallel.
 ```
