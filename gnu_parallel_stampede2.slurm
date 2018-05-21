@@ -11,7 +11,7 @@
 #SBATCH --mail-user <developer>@email.arizona.edu
 
 # assume parallel is already on $PATH
-
+# define the env_parallel function (important!)
 . $(which env_parallel.bash)
 
 # nodelist
