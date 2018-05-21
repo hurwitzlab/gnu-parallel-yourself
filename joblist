@@ -1,8 +1,8 @@
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
-sleep 1 && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
+sleep 1 && ls -l $HOME  && echo $SLURM_NODEID
