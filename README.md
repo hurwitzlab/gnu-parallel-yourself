@@ -2,6 +2,7 @@
 Template script and instructions for using GNU Parallel in place of the TACC Launcher on Stampede2.
 
 Documentation on GNU Parallel: https://www.gnu.org/software/parallel/
+
 Handy information for using GNU Parallel on a cluster: https://www.msi.umn.edu/support/faq/how-can-i-use-gnu-parallel-run-lot-commands-parallel
 
 ## Prerequisites
