@@ -21,7 +21,7 @@ export PATH="$HOME/bin:$PATH"
 ```
 
 ## Installation
-To get an idea of how to use GNU Parallel clone this repository to some directory on Stampede2. For example:
+To get an idea of how to use GNU Parallel clone this repository to some directory on Stampede2:
 ```
  git clone git@github.com:hurwitzlab/gnu-parallel-yourself.git
 ```
