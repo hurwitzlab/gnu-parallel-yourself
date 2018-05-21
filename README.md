@@ -13,10 +13,11 @@ bzip2 -dc parallel-*.tar.bz2 | tar xvf -
 cd parallel-*
 ./configure --prefix=$HOME && make && make install
 ```
-Add the $HOME/bin directory to your PATH variable in .bashrc:
+Add the $HOME/bin directory to your PATH variable and source `env_parallel.bash` in `.bashrc`.
 ```
 ...
 export PATH="$HOME/bin:$PATH"
+. $(which env_parallel.bash)
 ```
 
 ## Installation
