@@ -14,9 +14,8 @@
 
 . $(which env_parallel.bash)
 
-# NODELIST
-NODELIST=nodelist
-scontrol show hostnames $SLURM_JOB_NODELIST > ${NODELIST}
+# nodelist
+scontrol show hostnames $SLURM_JOB_NODELIST > nodelist
 
 # $JOBFILE is the list of jobs
 JOBFILE=joblist
@@ -24,12 +23,9 @@ JOBFILE=joblist
 # PPN is processes per node
 PPN=4
 
-echo $SLURM_JOB_NODELIST
-cat $NODELIST
-
-# I am getting --jobs wrong
-
-env_parallel --max-procs 4 --joblog paralleljobs.log  --sshloginfile nodelist --group < joblist
+# env_parallel sends the shell environment to each process it starts
+ 
+env_parallel --max-procs ${PPN} --joblog paralleljobs.log  --sshloginfile nodelist --group < ${JOBFILE}
 
 echo " "
 echo "GNU Parallel Job Complete"
