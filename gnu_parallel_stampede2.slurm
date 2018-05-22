@@ -23,9 +23,14 @@ JOBFILE=joblist
 # PPN is processes per node
 PPN=4
 
-# env_parallel sends the shell environment to each process it starts
- 
-env_parallel --max-procs ${PPN} --joblog paralleljobs.log  --sshloginfile nodelist --group < ${JOBFILE}
+# env_parallel sends the shell environment to each process it starts (important!)
+# added --sshdelay 0.1 because of this warning on Stampede2:
+#   parallel: Warning: ssh to c455-063 only allows for 19 simultaneous logins.
+#   parallel: Warning: You may raise this by changing /etc/ssh/sshd_config:MaxStartups and MaxSessions on c455-063.
+#   parallel: Warning: You can also try --sshdelay 0.1
+#   parallel: Warning: Using only 18 connections to avoid race conditions. 
+
+env_parallel --max-procs ${PPN} --joblog paralleljobs.log  --sshloginfile nodelist --sshdelay 0.1 --group < ${JOBFILE}
 
 echo " "
 echo "GNU Parallel Job Complete"
